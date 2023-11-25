@@ -15,3 +15,21 @@
     --main_font_size: 20px;
     --title_font_size: 200px;    
 }
+
+.titre {
+    font-size: var(--title_font_size);
+    font-family: var(--title_font);
+    color: var(--main_color_text);
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.sous_titre {
+    font-size: var(--main_font_size);
+    font-family: var(--main_font);
+    color: var(--main_color_text);
+
+    text-align: center;
+}
