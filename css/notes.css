@@ -16,20 +16,15 @@
     --title_font_size: 170px;    
 }
 
-.titre {
-    font-size: var(--title_font_size);
-    font-family: var(--title_font);
+.liste_note {}
+
+.note {
+    list-style: none;
     color: var(--main_color_text);
-
-    text-align: center;
-
-    margin-bottom: 50px;
 }
 
-.sous_titre {
-    font-size: var(--main_font_size);
-    font-family: var(--main_font);
-    color: var(--main_color_text);
+.titre_note {}
 
-    text-align: center;
-}
+.descr_note {}
+
+.cercle_note {}

@@ -13,7 +13,5 @@
 
     
     --main_font_size: 20px;
-    --title_font_size: 200px;    
+    --title_font_size: 170px;    
 }
-
-test
