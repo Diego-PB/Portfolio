@@ -1,3 +1,4 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
@@ -15,3 +16,4 @@
     --main_font_size: 20px;
     --title_font_size: 170px;    
 }
+```
