@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
 
 :root {
     /* Couleur */
@@ -13,7 +14,16 @@
 
     
     --main_font_size: 20px;
-    --title_font_size: 170px;    
+    --title_font_size: 170px;
+    
+    /* Page - Note */
+    --note_titre_font: 25px;
+
+    --note_descr_font_size: 17px;
+    --note_descr_font_family: 'Roboto Serif', serif;
+
+    /* Border */
+    --main_border_radius: 24px;
 }
 
 .liste_note {}
@@ -21,10 +31,19 @@
 .note {
     list-style: none;
     color: var(--main_color_text);
+
+    background-color: #374d87b5;
+    border-radius: var(--main_border_radius);
 }
 
-.titre_note {}
+.titre_note {
+    font-size: var(--note_titre_font);
+    font-family: var(--title_font);
+}
 
-.descr_note {}
+.descr_note {
+    font-size: var(--note_descr_font_size);
+    font-family: var(--note_descr_font_family);
+}
 
 .cercle_note {}
