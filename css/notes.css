@@ -14,7 +14,7 @@
 
     
     --main_font_size: 20px;
-    --title_font_size: 170px;
+    --title_font_size: 10vw;
     
     /* Page - Note */
     --note_titre_font: 25px;
@@ -23,10 +23,13 @@
     --note_descr_font_family: 'Roboto Serif', serif;
 
     /* Border */
-    --main_border_radius: 24px;
+    --main_border_radius: 15px;
 }
 
-.liste_note {}
+.liste_note {    
+    padding: 0px;
+    margin-top: 5em;
+}
 
 .note {
     list-style: none;
@@ -34,6 +37,9 @@
 
     background-color: #374d87b5;
     border-radius: var(--main_border_radius);
+
+    padding: 20px;
+    margin: 3em 20vw;
 }
 
 .titre_note {
