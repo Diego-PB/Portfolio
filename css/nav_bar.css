@@ -1,5 +1,5 @@
 /* Debut */
-/* 1/12/2023 [23:00] */
+/* 1/12/2023 [23:50] */
 
 /* 'Sometype Mono', monospace */    @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 /* 'Gabarito', sans-serif */        @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
@@ -8,7 +8,7 @@
 :root {
     /* Color */
     
-    --color_background_main: #121F40;
+    --color_background_main: #121F40 ;
     --color_font_main: #fff;
     --color_current_page: rgba(217, 217, 217, 0.3);
     
@@ -26,10 +26,18 @@
     --border_radius_main: 15px;
 
     /* notes.html */
+    --color_background_note:rgba(55, 77, 135, 0.7);
+    --color_background_note_hover:rgba(62, 94, 180, 0.7);
+    --color_background_cercle: rgb(127, 144, 187);
+    --color_font_titre_note: hsl(216.7, 100%, 73.7%);
+    
+
     --font_size_title_note: 25px;
     --font_size_descr_note: 17px;
 
-    --font_family_descr_note: 'Roboto Serif', serif;    
+    --font_family_descr_note: 'Roboto Serif', serif;
+    
+    --cercle_note_dim: 90px;    
 }
 /* Fin */
 
