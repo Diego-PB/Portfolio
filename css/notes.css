@@ -8,7 +8,7 @@
 :root {
     /* Color */
     
-    --color_background_main: #121F40;
+    --color_background_main: #121F40 ;
     --color_font_main: #fff;
     --color_current_page: rgba(217, 217, 217, 0.3);
     
@@ -26,10 +26,18 @@
     --border_radius_main: 15px;
 
     /* notes.html */
+    --color_background_note:rgba(55, 77, 135, 0.7);
+    --color_background_note_hover:rgba(62, 94, 180, 0.7);
+    --color_background_cercle: rgb(127, 144, 187);
+    --color_font_titre_note: hsl(216.7, 100%, 73.7%);
+    
+
     --font_size_title_note: 25px;
     --font_size_descr_note: 17px;
 
-    --font_family_descr_note: 'Roboto Serif', serif;    
+    --font_family_descr_note: 'Roboto Serif', serif;
+    
+    --cercle_note_dim: 90px;    
 }
 /* Fin */
 
@@ -42,21 +50,48 @@
     list-style: none;
     color: var(--color_font_main);
 
-    background-color: #374d87b5;
+    background-color: var(--color_background_note);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px); /* a tester */
+    border: 1px solid rgba(128, 117, 117, 0.3);
+
     border-radius: var(--border_radius_main);
 
-    padding: 20px;
+    padding: 20px 30px;
     margin: 3em 20vw;
+
+    transition: 0.5s;    
+}
+
+.note:hover{
+    cursor: pointer;
+    background-color: var(--color_background_note_hover);
 }
 
 .titre_note {
     font-size: var(--font_size_title_note);
     font-family: var(--font_family_title);
+
+    color: var(--color_font_titre_note);
 }
 
 .descr_note {
     font-size: var(--font_size_descr_note);
     font-family: var(--font_family_descr_note);
+
+    max-width: 75%; 
 }
 
-.cercle_note {}
+.cercle_note {
+    position: absolute;
+    /* left: 87%; */
+    right: 30px;
+    top: calc(50% - calc(var(--cercle_note_dim)/2));
+
+
+    width: var(--cercle_note_dim);
+    height: var(--cercle_note_dim);
+    border-radius: 999px; /* assez pour faire un cercle */
+
+    background-color: var(--color_background_cercle);    
+}

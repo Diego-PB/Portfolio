@@ -33,13 +33,15 @@
   <!-- Debut - Contenue de la page -->
   <ul class="liste_note">
     
-    <li class="note">
-      <p class="titre_note">Titre note 1</p>
-      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris</p>     
-      <div class="cercle_note"></div>
+    <li class="note" active_link="https://fr.wikipedia.org/wiki/Titre_note_2">   
+        <div>
+          <p class="titre_note">Titre note 1</p>
+          <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris//Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris</p>     
+          <div class="cercle_note"></div>
+        </div>
     </li>
 
-    <li class="note">
+    <li class="note" active_link="https://github.com">
       <p class="titre_note">Titre note 2</p>
       <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris</p>     
       <div class="cercle_note"></div>
@@ -54,5 +56,24 @@
   </ul>
   <!-- Fin - Contenue de la page -->
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var liElements = document.querySelectorAll('.liste_note .note');
+
+    liElements.forEach(function(li) {
+      li.addEventListener('click', function() {
+        // Récupérez l'URL spécifique à chaque élément <li>
+        var wikipediaURL = li.getAttribute('active_link');
+
+        // Effectuez la redirection vers l'URL correspondante
+        window.location.href = wikipediaURL;
+
+        // Ajoutez la ligne suivante pour annuler le comportement par défaut du lien
+        return false;
+      });
+    });
+  });
+</script>
 
 </html>
