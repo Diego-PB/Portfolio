@@ -1,39 +1,42 @@
-/* 30/11/2023 [20:52] */
-@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
+/* 1/12/2023 [13:26] */
+
+/* 'Sometype Mono', monospace */    @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+/* 'Gabarito', sans-serif */        @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+/* 'Roboto Serif', serif */         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
 
 :root {
-    /* Couleur */
-    --main_color_background: #121F40;
-    --main_color_text: #fff;
-    --current_page_nav: rgba(217, 217, 217, 0.3);
-
-    /* Police */
-    --main_font: 'Sometype Mono', monospace;
-    --title_font: 'Gabarito', sans-serif;
-
+    /* Color */
     
-    --main_font_size: 20px;
-    --title_font_size: 10vw;
+    --color_background_main: #121F40;
+    --color_font_main: #fff;
+    --color_current_page: rgba(217, 217, 217, 0.3);
     
-    /* Page - Note */
-    --note_titre_font: 25px;
 
-    --note_descr_font_size: 17px;
-    --note_descr_font_family: 'Roboto Serif', serif;
+    /* Font */
+    --font_family_main: 'Sometype Mono', monospace;
+    --font_family_title: 'Gabarito', sans-serif;
+    
+    --font_size_main: 20px;
+    --font_size_title: 10vw;
 
     /* Border */
-    --main_border_radius: 15px;
+
+    --border_radius_main: 15px;
+
+    /* notes.html */
+    --font_size_title_note: 25px;
+    --font_size_descr_note: 17px;
+
+    --font_family_descr_note: 'Roboto Serif', serif;    
 }
 
 .titre {
     position: relative;
     top:30px;
 
-    font-size: var(--title_font_size);
-    font-family: var(--title_font);
-    color: var(--main_color_text);
+    font-size: var(--font_size_title);
+    font-family: var(--font_family_title);
+    color: var(--color_font_main);
 
     text-align: center;
 
@@ -41,9 +44,9 @@
 }
 
 .sous_titre {
-    font-size: var(--main_font_size);
-    font-family: var(--main_font);
-    color: var(--main_color_text);
+    font-size: var(--font_size_main);
+    font-family: var(--font_family_main);
+    color: var(--color_font_main);
 
     text-align: center;
 }
