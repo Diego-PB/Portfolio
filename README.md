@@ -23,7 +23,8 @@ Le site est composé de plusieurs pages :
 Ce bout de code represente le ```:root``` present dans chaque fichier.css
 
 ```css
-/* 1/12/2023 [13:26] */
+/* Debut */
+/* 1/12/2023 [23:00] */
 
 /* 'Sometype Mono', monospace */    @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 /* 'Gabarito', sans-serif */        @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
@@ -42,7 +43,8 @@ Ce bout de code represente le ```:root``` present dans chaque fichier.css
     --font_family_title: 'Gabarito', sans-serif;
     
     --font_size_main: 20px;
-    --font_size_title: 10vw;
+
+    --font_size_title: 9.6em;
 
     /* Border */
 
@@ -54,6 +56,7 @@ Ce bout de code represente le ```:root``` present dans chaque fichier.css
 
     --font_family_descr_note: 'Roboto Serif', serif;    
 }
+/* Fin */
 ```
 
 
