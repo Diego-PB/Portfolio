@@ -16,7 +16,7 @@ Le site est composé de plusieurs pages :
 *Les coches représentent si les pages sont terminées ou non*
 
 - [ ] Acceuil
-- [ ] Notes
+- [x] Notes | *contenu a faire*
 - [ ] Projets
 - [ ] A Propos
 - [ ] Contact
