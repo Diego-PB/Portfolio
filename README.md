@@ -7,7 +7,7 @@ Il presente mon profil, mes compétences, mes projets.
 
 [Site v1](https://diegopenicaudbernal-website.onrender.com/)
 
-[Site v2 travail en cours](https://diegopenicaudbernal-website.onrender.com/](https://diego-pb.github.io/Portfolio/))
+[Site v2 / travail en cours](https://diego-pb.github.io/Portfolio/)
 
 
 ## Pages
