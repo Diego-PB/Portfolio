@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <title>Diego Penicaud-Bernal</title>
 
-  <link rel="stylesheet" href="css/nav_bar.css" />  <!-- nav bar -->
-  <link rel="stylesheet" href="css/title.css">      <!-- titre et sous titre -->
-  <link rel="stylesheet" href="css/notes.css">      <!-- contenu de la page -->
-  <!-- Menu en haut de la page -->
+  <link rel="stylesheet" href="css/nav_bar.css" /> <!-- nav bar -->
+  <link rel="stylesheet" href="css/body.css"> <!-- body -->
+  <link rel="stylesheet" href="css/title.css"> <!-- titre et sous titre -->
+  <link rel="stylesheet" href="css/notes.css"> <!-- contenu de la page -->
+
+
 </head>
 
 <body>
@@ -32,24 +34,44 @@
 
   <!-- Debut - Contenue de la page -->
   <ul class="liste_note">
-    
-    <li class="note" active_link="https://fr.wikipedia.org/wiki/Titre_note_2">   
-        <div>
-          <p class="titre_note">Titre note 1</p>
-          <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris//Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris</p>     
-          <div class="cercle_note"></div>
+
+    <li class="note" activeURL="https://cssbattle.dev/player/diegopb">
+      <div>
+        <p class="titre_note">Css Battle</p>
+        <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis
+          fermentum mauris//Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis
+          fermentum mauris</p>
+        <div class="cercle_note">
+          <img src="img/cssbattle.png">
         </div>
+      </div>
     </li>
 
-    <li class="note" active_link="https://github.com">
+    <li class="note" activeURL="https://github.com">
       <p class="titre_note">Titre note 2</p>
-      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris</p>     
+      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis
+        fermentum mauris</p>
       <div class="cercle_note"></div>
     </li>
 
     <li class="note">
       <p class="titre_note">Titre note 3</p>
-      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis fermentum mauris</p>     
+      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis
+        fermentum mauris</p>
+      <div class="cercle_note"></div>
+    </li>
+
+    <li class="note">
+      <p class="titre_note">Titre note 3</p>
+      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis
+        fermentum mauris</p>
+      <div class="cercle_note"></div>
+    </li>
+
+    <li class="note">
+      <p class="titre_note">Titre note 3</p>
+      <p class="descr_note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum ligula, mattis
+        fermentum mauris</p>
       <div class="cercle_note"></div>
     </li>
 
@@ -57,23 +79,35 @@
   <!-- Fin - Contenue de la page -->
 </body>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var liElements = document.querySelectorAll('.liste_note .note');
+<script> /* Script js permettant que lorsque l'on clique sur une note, si un lien a été associer, cela nous envoie sur une page, comme un hyperlien */
+  document.addEventListener("DOMContentLoaded", function () { /* execute le script une fois que la page est totalement chargé */
+    var liElements = document.querySelectorAll('.liste_note .note'); /* selectionne tout les .note */
 
-    liElements.forEach(function(li) {
-      li.addEventListener('click', function() {
-        // Récupérez l'URL spécifique à chaque élément <li>
-        var wikipediaURL = li.getAttribute('active_link');
+    liElements.forEach(function (li) { /* pour chaque li */
+      li.addEventListener('click', function () { /* quand li cliqué */
 
-        // Effectuez la redirection vers l'URL correspondante
-        window.location.href = wikipediaURL;
+        var activeURL = li.getAttribute('activeURL');
+        window.location.href = activeURL; /* redirige vers le lien mis dans la variable activeURL */
 
-        // Ajoutez la ligne suivante pour annuler le comportement par défaut du lien
         return false;
       });
     });
   });
+</script>
+
+<script> /* Script js permettant d'ajouter un background-color au menu dans le nav lorsque on descend dans la page */
+  window.addEventListener('scroll', function () { /* execute le script en fondtion du scroll */
+    var navbar = document.querySelector('nav ul'); /* selectionne le menu */
+
+    if (window.scrollY <= 100) { /* si le scroll descend de 1px */
+      navbar.classList.remove('scrolled'); /* retire le bg */
+    } else {
+
+      navbar.classList.add('scrolled'); /* ajoute le bg */
+    }
+  });
+
+
 </script>
 
 </html>

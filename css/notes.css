@@ -1,22 +1,25 @@
 /* Debut */
 /* 1/12/2023 [23:50] */
 
-/* 'Sometype Mono', monospace */    @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
-/* 'Gabarito', sans-serif */        @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
-/* 'Roboto Serif', serif */         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
+/* 'Sometype Mono', monospace */
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+/* 'Gabarito', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+/* 'Roboto Serif', serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
 
 :root {
     /* Color */
-    
-    --color_background_main: #121F40 ;
+
+    --color_background_main: #121F40;
     --color_font_main: #fff;
     --color_current_page: rgba(217, 217, 217, 0.3);
-    
+
 
     /* Font */
     --font_family_main: 'Sometype Mono', monospace;
     --font_family_title: 'Gabarito', sans-serif;
-    
+
     --font_size_main: 20px;
 
     --font_size_title: 9.6em;
@@ -26,22 +29,23 @@
     --border_radius_main: 15px;
 
     /* notes.html */
-    --color_background_note:rgba(55, 77, 135, 0.7);
-    --color_background_note_hover:rgba(62, 94, 180, 0.7);
+    --color_background_note: rgba(55, 77, 135, 0.7);
+    --color_background_note_hover: rgba(62, 94, 180, 0.7);
     --color_background_cercle: rgb(127, 144, 187);
     --color_font_titre_note: hsl(216.7, 100%, 73.7%);
-    
+
 
     --font_size_title_note: 25px;
     --font_size_descr_note: 17px;
 
     --font_family_descr_note: 'Roboto Serif', serif;
-    
-    --cercle_note_dim: 90px;    
+
+    --cercle_note_dim: 90px;
 }
+
 /* Fin */
 
-.liste_note {    
+.liste_note {
     padding: 0px;
     margin-top: 5em;
 }
@@ -52,7 +56,8 @@
 
     background-color: var(--color_background_note);
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(6px); /* a tester */
+    backdrop-filter: blur(6px);
+    /* a tester */
     border: 1px solid rgba(128, 117, 117, 0.3);
 
     border-radius: var(--border_radius_main);
@@ -60,10 +65,10 @@
     padding: 20px 30px;
     margin: 3em 20vw;
 
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
-.note:hover{
+.note:hover {
     cursor: pointer;
     background-color: var(--color_background_note_hover);
 }
@@ -79,7 +84,7 @@
     font-size: var(--font_size_descr_note);
     font-family: var(--font_family_descr_note);
 
-    max-width: 75%; 
+    max-width: 75%;
 }
 
 .cercle_note {
@@ -91,7 +96,17 @@
 
     width: var(--cercle_note_dim);
     height: var(--cercle_note_dim);
-    border-radius: 999px; /* assez pour faire un cercle */
+    border-radius: 999px;
+    /* assez pour faire un cercle */
 
-    background-color: var(--color_background_cercle);    
+    background-color: var(--color_background_cercle);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cercle_note img {
+    width: 60px;
+    height: auto;
 }
