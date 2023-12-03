@@ -43,23 +43,27 @@
 /* Fin */
 
 .titre:nth-child(2) {
+    /* Titre */
     position: relative;
     top: 60px;
-    font-size: 8em ; /* 9.6 em par defaut | var(--font_size_title) */
-    font-family: var(--font_family_title); 
+    font-size: 8em;
+    /* 9.6 em par defaut | var(--font_size_title) */
+    font-family: var(--font_family_title);
     color: var(--color_font_main);
     text-align: center;
     margin-bottom: 50px;
 }
 
 .titre:nth-child(3) {
+    /* Sous-titre */
     position: relative;
     top: 60px;
-    font-size: 6em ; /* 9.6 em par defaut | var(--font_size_title) */
-    font-family: var(--font_family_title); 
+    font-size: 6em;
+    /* 20 px par defaut | var(--font_size_main) */
+    font-family: var(--font_family_title);
     color: var(--color_font_main);
     text-align: center;
-    margin-top: -40px;
+    margin-top: -60px;
     margin-bottom: 100px;
 }
 

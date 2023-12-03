@@ -5,9 +5,9 @@ Il presente mon profil, mes compétences, mes projets.
 
 ## Lien
 
-[Site v1](https://diegopenicaudbernal-website.onrender.com/)
+[Site v1 / Render / ...](https://diegopenicaudbernal-website.onrender.com/)
 
-[Site v2 / travail en cours](https://diego-pb.github.io/Portfolio/)
+[Site v2 / GitHub / travail en cours](https://diego-pb.github.io/Portfolio/)
 
 
 ## Pages
@@ -15,13 +15,13 @@ Il presente mon profil, mes compétences, mes projets.
 Le site est composé de plusieurs pages :  
 *Les coches représentent si les pages sont terminées ou non*
 
-- [ ] Acceuil
-- [x] Notes | *contenu a faire*
+- [x] Acceuil | *contenu a faire*
+- [x] Notes
 - [ ] Projets
 - [ ] A Propos
 - [ ] Contact
 
-## Root
+### Css
 
 Ce bout de code represente le ```:root``` present dans chaque fichier.css
 
@@ -69,5 +69,21 @@ Ce bout de code represente le ```:root``` present dans chaque fichier.css
 
 /* Fin */
 ```
+### Javascript
 
+Ce script permet l'ajout de couleur au background du menu situé dans le ```<nav>``` lorque l'on descend dans la page
 
+```javascipt
+<script> /* Script js permettant d'ajouter un background-color au menu dans le nav lorsque on descend dans la page */
+  window.addEventListener('scroll', function () { /* execute le script en fondtion du scroll */
+    var navbar = document.querySelector('nav ul'); /* selectionne le menu */
+
+    if (window.scrollY <= 100) { /* si le scroll descend de 1px */
+      navbar.classList.remove('scrolled'); /* retire le bg */
+    } else {
+
+      navbar.classList.add('scrolled'); /* ajoute le bg */
+    }
+  });
+</script>
+```
