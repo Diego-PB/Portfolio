@@ -73,7 +73,7 @@ Ce bout de code represente le ```:root``` present dans chaque fichier.css
 
 Ce script permet l'ajout de couleur au background du menu situé dans le ```<nav>``` lorque l'on descend dans la page
 
-```javascipt
+```js
 <script> /* Script js permettant d'ajouter un background-color au menu dans le nav lorsque on descend dans la page */
   window.addEventListener('scroll', function () { /* execute le script en fondtion du scroll */
     var navbar = document.querySelector('nav ul'); /* selectionne le menu */
