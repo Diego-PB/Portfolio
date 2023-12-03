@@ -81,6 +81,8 @@
     font-family: var(--font_family_descr_note);
 
     max-width: 75%;
+
+    line-height: 1.5em;
 }
 
 .cercle_note {
