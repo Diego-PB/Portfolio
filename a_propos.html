@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/nav_bar.css" /> <!-- nav bar -->
   <link rel="stylesheet" href="css/body.css"> <!-- body -->
   <link rel="stylesheet" href="css/title.css"> <!-- titre et sous titre -->
+
+  <script src="app.js"></script> <!-- 1/ nav bar background -->
   <!-- Menu en haut de la page -->
 </head>
 
@@ -29,18 +31,4 @@
   <p class="sous_titre">Quelques lignes sur mon profil, mes compétences et mon parcours.</p> <!-- peut etre ecrit en mode code // code enzo -->
   <!-- Fin - Titre et Sous-Titre -->
 </body>
-
-<script> /* Script js permettant d'ajouter un background-color au menu dans le nav lorsque on descend dans la page */
-  window.addEventListener('scroll', function () { /* execute le script en fondtion du scroll */
-    var navbar = document.querySelector('nav ul'); /* selectionne le menu */
-
-    if (window.scrollY <= 100) { /* si le scroll descend de 1px */
-      navbar.classList.remove('scrolled'); /* retire le bg */
-    } else {
-
-      navbar.classList.add('scrolled'); /* ajoute le bg */
-    }
-  });
-</script>
-
 </html>

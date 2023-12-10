@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/title.css"> <!-- titre et sous titre -->
   <link rel="stylesheet" href="css/notes.css"> <!-- contenu de la page -->
 
+  <script src="app.js"></script> <!-- 1/ nav bar background -->
+
 
 </head>
 
@@ -48,34 +50,7 @@
   </ul>
   <!-- Fin - Contenue de la page -->
 </body>
-
-<script> /* Script js permettant d'ajouter un background-color au menu dans le nav lorsque on descend dans la page */
-  window.addEventListener('scroll', function () { /* execute le script en fondtion du scroll */
-    var navbar = document.querySelector('nav ul'); /* selectionne le menu */
-
-    if (window.scrollY <= 100) { /* si le scroll descend de 1px */
-      navbar.classList.remove('scrolled'); /* retire le bg */
-    } else {
-
-      navbar.classList.add('scrolled'); /* ajoute le bg */
-    }
-  });
-</script>
-
-<script> /* Script js permettant que lorsque l'on clique sur une note, si un lien a été associer, cela nous envoie sur une page, comme un hyperlien */
-  document.addEventListener("DOMContentLoaded", function () { /* execute le script une fois que la page est totalement chargé */
-    var liElements = document.querySelectorAll('.liste_note .note'); /* selectionne tout les .note */
-
-    liElements.forEach(function (li) { /* pour chaque li */
-      li.addEventListener('click', function () { /* quand li cliqué */
-
-        var activeURL = li.getAttribute('activeURL');
-        window.location.href = activeURL; /* redirige vers le lien mis dans la variable activeURL */
-
-        return false;
-      });
-    });
-  });
+<script> 
 </script>
 
 </html>
