@@ -1,7 +1,7 @@
 # Readme
 
 Ce site est mon E-Portfolio.
-Il presente mon profil, mes compétences, mes projets.
+Il presente mon profil, mes compétences et mes projets.
 
 ## Lien
 
