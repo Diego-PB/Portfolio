@@ -8,8 +8,8 @@
 .titre:nth-child(2) {
     /* Titre */
     position: relative;
-    top: 60px;
-    font-size: 8em;
+    top: 20px;
+    font-size: 8vw;
     /* 9.6 em par defaut */
     font-family: var('Gabarito', sans-serif);
     color: #fff;
@@ -20,8 +20,8 @@
 .titre:nth-child(3) {
     /* Sous-titre */
     position: relative;
-    top: 60px;
-    font-size: 6em;
+    top: 20px;
+    font-size: 7vw;
     /* 20 px par defaut | var(--font_size_main) */
     font-family: 'Gabarito', sans-serif;
     color: white;
@@ -35,7 +35,7 @@
     font-size: 20px;
     font-family: 'Sometype Mono', monospace;
     color: white;
-
+    top: -50px;
     text-align: center;
 }
 
@@ -52,7 +52,7 @@
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
 
-    top: 3em;
+    top: -40px;
     left: calc(50% - 142px);
 }
 
