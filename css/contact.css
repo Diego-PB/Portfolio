@@ -17,6 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 .pop_up {
+    z-index: 100;
     position: fixed;
     --ecart: 50px;
     right: var(--ecart);

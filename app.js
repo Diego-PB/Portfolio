@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () { /* execute le script en fondtion
     }
 });
 
-/* efgyegfygfygyegf */
+/* Permet que lorque l'on clique sur un projet ou une note, d'etre redirigé sur un lien */
 document.addEventListener("DOMContentLoaded", function () {// Attacher un événement à l'élément du DOM avec la classe "liste_note" lorsque le DOM est complètement chargé
     var liElements = document.querySelectorAll('.liste_note .note, .liste_projet li');// Récupérer tous les éléments li avec la classe "note" et les stocker dans la variable "liElements"
     liElements.forEach(function (li) {// Parcourir chaque élément li et attacher un événement 'click'
@@ -25,3 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {// Attacher un évén
         });
     });
 });
+
+/* Permet l'affichage ou non du pop-up contact */
+
+document.getElementById('text').addEventListener('click', function () {
+    document.getElementById('popupp').style.display = 'block';
+  });
+
+  document.getElementById('main-container').onclick = function (event) {
+    if (event.target !== document.getElementById('text') && !document.getElementById('popupp').contains(event.target)) {
+      document.getElementById('popupp').style.display = 'none';
+    }
+  };
