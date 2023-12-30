@@ -25,9 +25,3 @@ document.addEventListener("DOMContentLoaded", function () {// Attacher un évén
         });
     });
 });
-
-/* efgfyg */
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }

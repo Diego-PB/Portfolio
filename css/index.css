@@ -54,6 +54,7 @@
 
     top: -40px;
     left: calc(50% - 142px);
+    z-index: 99;
 }
 
 .cv::before {
