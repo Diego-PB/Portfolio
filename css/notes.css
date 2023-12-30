@@ -8,8 +8,8 @@
 .liste_note {
     padding: 0px;
     margin-top: 5em;
+    z-index: 800;   
 }
-
 .note {
     list-style: none;
     color: #fff;
@@ -26,6 +26,7 @@
     margin: 3em 20vw;
 
     transition: 0.5s;
+    z-index: 800;
 }
 
 .note:hover {

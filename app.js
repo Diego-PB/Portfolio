@@ -28,12 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {// Attacher un évén
 
 /* Permet l'affichage ou non du pop-up contact */
 
-document.getElementById('text').addEventListener('click', function () {
-    document.getElementById('popupp').style.display = 'block';
-  });
+function openForm() { /* ouvre */
+    document.getElementById("myForm").style.display = "block";
+}
 
-  document.getElementById('main-container').onclick = function (event) {
-    if (event.target !== document.getElementById('text') && !document.getElementById('popupp').contains(event.target)) {
-      document.getElementById('popupp').style.display = 'none';
-    }
-  };
+function closeForm() { /* ferme */
+    document.getElementById("myForm").style.display = "none";
+}

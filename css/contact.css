@@ -1,23 +1,12 @@
-#main-container {
-    position: absolute;
-    top: 0px;
-    background: rgba(255, 200, 0, 0);
-    width: 100vw;
-    height: 100vh
-}
-
-#container {
-    position: relative;
-}
-
-#text {
-    cursor: pointer;
-}
-
+/* 'Sometype Mono', monospace */
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+/* 'Gabarito', sans-serif */
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+/* 'Roboto Serif', serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
 
 .pop_up {
-    z-index: 100;
+    z-index: 90;
     position: fixed;
     --ecart: 50px;
     right: var(--ecart);
@@ -136,18 +125,39 @@
     }
 }
 
-.media img{
+.media img {
     width: 45px;
     height: auto;
     align-self: center;
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.exit {
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    font-size: larger;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 1px 1px 9px;
+}
