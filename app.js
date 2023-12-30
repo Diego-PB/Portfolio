@@ -10,6 +10,7 @@ window.addEventListener('scroll', function () { /* execute le script en fondtion
     }
 });
 
+/* efgyegfygfygyegf */
 document.addEventListener("DOMContentLoaded", function () {// Attacher un événement à l'élément du DOM avec la classe "liste_note" lorsque le DOM est complètement chargé
     var liElements = document.querySelectorAll('.liste_note .note, .liste_projet li');// Récupérer tous les éléments li avec la classe "note" et les stocker dans la variable "liElements"
     liElements.forEach(function (li) {// Parcourir chaque élément li et attacher un événement 'click'
@@ -24,3 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {// Attacher un évén
         });
     });
 });
+
+/* efgfyg */
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
