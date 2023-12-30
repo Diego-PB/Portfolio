@@ -56,6 +56,8 @@ nav ul li {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+
+    cursor: pointer;
 }
 
 nav ul li a {
