@@ -136,6 +136,12 @@
     }
 }
 
+.media img{
+    width: 45px;
+    height: auto;
+    align-self: center;
+}
+
 @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
     to {opacity: 1;}

@@ -52,12 +52,16 @@ nav ul li {
     padding: 10px 1em;
 
     border-radius: 26px;
-}
 
-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+}
+
+nav ul li a {
+    /* retire la couleur bleu du lien et le trait du dessous */
+    color: #fff;
+    text-decoration: none;
 }
 
 nav ul .active {
