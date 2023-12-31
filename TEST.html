@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 'Sometype Mono', monospace */
+        @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+        /* 'Gabarito', sans-serif */
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+        /* 'Roboto Serif', serif */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Serif:opsz@8..144&display=swap');
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #121F40;
+        }
+
+
+        /* Skills */
+
+        body {
+            --html: 90%;
+            /* var(--html) */
+
+            --css: 70%;
+            /* var(--css) */
+
+            --java: 50%;
+            /* var(--java) */
+
+            --python: 30%;
+            /* var(--python) */
+
+            --sql: 40%;
+            /* var(--sql) */
+        }
+
+        .skills_container {
+            display: flex;
+            justify-content: center;
+            /* Centre horizontalement */
+            align-items: center;
+            /* Centre verticalement */
+        }
+
+        .skills_container p {
+            position: relative;
+            color: white;
+            font-family: 'Gabarito', sans-serif;
+            width: 40vw;
+            text-align: center;
+            /* Centre le texte horizontalement */
+        }
+
+        .skills_container .skills {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .skills li {
+            width: 40vw;
+            height: 15px;
+
+            margin: 2.5em;
+            margin-left: 1em;
+
+            background: grey;
+            border-radius: 20px
+        }
+
+        .html::before {
+            content: "HTML";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+        }
+
+        .css::before {
+            content: "CSS";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+        }
+
+        .java::before {
+            content: "Java";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+        }
+
+        .python::before {
+            content: "Python";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+        }
+
+        .sql::before {
+            content: "SQL";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+        }
+
+        .bar {
+            position: relative;
+            width: 10%;
+            height: 15px;
+            top: -19px;
+            border-radius: 20px;
+            background: white;
+        }
+
+        .html .bar {
+            width: var(--html)
+        }
+
+        .css .bar {
+            width: var(--css)
+        }
+
+        .java .bar {
+            width: var(--java)
+        }
+
+        .python .bar {
+            width: var(--python)
+        }
+
+        .sql .bar {
+            width: var(--sql)
+        }
+
+        .html .bar::before {
+            content: "90%";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+            left: 95%;
+        }
+
+        .css .bar::before {
+            content: "70%";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+            left: 95%;
+        }
+
+        .java .bar::before {
+            content: "50%";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+            left: 95%;
+        }
+
+        .python .bar::before {
+            content: "30%";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+            left: 95%;
+        }
+
+        .sql .bar::before {
+            content: "40%";
+            font-family: arial;
+            color: white;
+            position: relative;
+            top: -20px;
+            left: 95%;
+        }
+
+
+        /* TIME LINE */
+
+        .timeline_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #121F40;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .design {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timeline {
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: #1f1f1f;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            border-radius: 5px;
+            color: white;
+            padding: 1.75rem;
+            margin: 1rem;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .timeline-component {
+            margin: 0px 20px 20px 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .timeline {
+                display: grid;
+                grid-template-columns: 1fr 3px 1fr;
+            }
+
+            .timeline-millieu {
+                position: relative;
+                background-image: linear-gradient(45deg, #2a7481, #28238a);
+                width: 3px;
+                height: 100%;
+            }
+
+            .main-middle {
+                opacity: 0;
+            }
+
+            .timeline-cercle {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-image: linear-gradient(45deg, #2a7481, #28238a);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- skills bar -->
+    <div class="skills_container">
+
+        <ul class="skills">
+            <li class="html">
+                <div class="bar"></div>
+            </li>
+            <li class="css">
+                <div class="bar">
+            </li>
+            <li class="java">
+                <div class="bar">
+            </li>
+            <li class="python">
+                <div class="bar">
+            </li>
+            <li class="sql">
+                <div class="bar">
+            </li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque blanditiis earum! Eius esse iste nisi
+            expedita minima necessitatibus similique ea est nostrum debitis? Incidunt obcaecati harum atque quasi quo.
+        </p>
+    </div>
+
+    <!-- timeline -->
+    <section class="timeline_container">
+        <div class="timeline">
+
+            <!-- 1er / gauche -->
+            <div class="timeline-vide">
+            </div>
+
+            <!-- 1er / millieu -->
+            <div class="timeline-millieu">
+                <div class="timeline-cercle"></div>
+            </div>
+
+            <!-- 1er / droite -->
+            <div class="timeline-component timeline-content">
+                <h3>Baccalauréat</h3>
+                <p>Some Text</p>
+            </div>
+
+            <!-- 2eme / gauche -->
+            <div class="timeline-component timeline-content">
+                <h3>BUT Informatique</h3>
+                <p>Some Text.</p>
+            </div>
+
+            <!-- 2eme / millieu -->
+            <div class="timeline-millieu">
+                <div class="timeline-cercle"></div>
+            </div>
+
+            <!-- 2eme / droite -->
+            <div class="timeline-vide">
+            </div>
+
+            <!-- 3eme / gauche -->
+            <div class="timeline-vide">
+            </div>
+
+            <!-- 3eme / millieu -->
+            <div class="timeline-millieu">
+                <div class="timeline-cercle"></div>
+            </div>
+
+            <!-- 3eme / gauche -->
+            <div class=" timeline-component timeline-content">
+                <h3>Alternance</h3>
+                <p>En recherche d'alternance ...</p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
