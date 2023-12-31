@@ -18,7 +18,7 @@ Le site est composé de plusieurs pages :
 - [x] Acceuil
 - [x] Notes
 - [x] Projets
-- [ ] A Propos
+- [x] A Propos
 - [x] Contact
 
 ## Javascript
