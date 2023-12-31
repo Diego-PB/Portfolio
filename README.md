@@ -30,3 +30,8 @@ Le site fait recours à du JavaScript pour :
 - Permettre d'associer un lien sur un "projet" ou une "note", et d'être redirigé sur le lien en question si une clique sur l'élément concerné.
 
 - Afficher un pop-up lorque l'on clique sur "contact" dans le menu de navigation
+
+## Test
+
+- Temps de chargement de l'index avec [PageSpeed Insight]()
+  [Résultat :](https://pagespeed.web.dev/analysis/https-diegopenicaudbernal-website-onrender-com/veqx1lmljf?hl=fr&form_factor=desktop)
