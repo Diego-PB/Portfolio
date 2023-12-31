@@ -8,7 +8,7 @@ Il presente mon profil, mes compétences et mes projets.
 [Site v1 / Render](https://diegopenicaudbernal-website.onrender.com/)
 
 
-[Lien du repository Github](https://diegopenicaudbernal-website.onrender.com/](https://github.com/Diego-PB/Portfolio/tree/main))
+[Lien du repository Github](https://github.com/Diego-PB/Portfolio/tree/main)
 
 ## Pages
 
